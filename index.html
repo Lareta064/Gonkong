@@ -40,9 +40,9 @@
 	    </div>
         <!-- //slider-->
         
-		<div class="header__logo">
+		<div class="navbar-brand header__logo">
 			<a href="index.html">
-				<img src="img/icons/logo4.png" alt="logo">
+				<img src="img/icons/logo5.png"  class="img-responsive" alt="logo">
 			</a>
 		</div>	
 		<nav class="header__nav">
@@ -51,264 +51,62 @@
 				<a href="#">Мероприятия</a>
 				<a href="#">Партнеры</a>
 				<a href="#">Напишите</a>
-								
             </div>            
 		</nav>
-		<a href="#" class="header__menu-icon" id="menu">&#9776</a>        
+		<!--Иконка навигации для маленьких экранов-->
+                    <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+                        <span>toggle menu</span>
+                    </button>
+                      <!--//Иконка навигации для маленьких экранов-->
+		<!--<a href="#" class="header__menu-icon" id="menu">&#9776</a>-->        
         
-		<!-- центральный текстовый блок в шапке-->
-		<button class="show_popup button-basic" rel="popup1"><a href="#">Узнать больше</a></button>
+		<!-- центральный текстовый блок в шапке
+		<button class="show_popup button-basic" rel="popup1"><a href="#">Узнать больше</a></button>-->
 		<!-- //центральный текстовый блок в шапке-->
-
-		
-
-		
+         <!--кнопка в центре-->
+		<div class="button-parent">
+        	<div class="button-parent--inner">
+   				 <div class="button-item show_popup" rel="popup1">
+      					<a href="#" class="btn-1">Узнать больше</a>
+    			</div>
+            </div>
+		</div>
+		<!--кнопка в центре-->
 	</header>
      <!-- //шапка--> 
 
 	<!-- основной контент-->
     
-	<main class="content">
-		<!-- top block Start Adventure-->
-		<section class="section-top">
-			<div class="container">				
-				<div class="row section-top-row">
-					<div class="col-md-6">
-						<div class="section__small-title">MEET QUICK</div>
-						<div class="section__title">Start Adventure</div>
-						<p class="section__paragraf">The artist is a collector of things imaginary or real. He accumulates things with the same enthusiasm that a little boy stuffs his pockets.
-						 </p>
-						 <p class="section__paragraf">	
-                        This is one of the latest block prints that I just finished up. Working on tightening up my registration. Not to bad considering.
-                        </p>
-					</div>					
-				</div>
+	<!--popup-->
+     <div class="overlay_popup"></div>
+     <div class="popup" id="popup1">
+        <div class="object">
+            <form id="contact-form" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Мероприятие">
+              <input type="hidden" name="admin_email" value="info@mail.ru">
+              <input type="hidden" name="form_subject" value="Сообщение с сайта">
+            <!-- END Hidden Required Fields -->
+                <h4>Готовы к переменам к лучшему? Свяжитесь с нами!</h4>
+                <div class="form-block-container">
+                  <div class="form-left-container">
+                      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                      <input type="text" class="phone" name="phone" id="phone" placeholder="Телефон" required>
+                      <input type="email" name="email" id="email" placeholder="E-mail" required>
+                  </div>
+                    <div class="form-right-container">
+                     <textarea name="message" id="message" rows="7" placeholder="Ваше сообщение" required></textarea>
+                  </div>     
+              </div>
+              <a href="#" id="form-close"><i class="fas fa-times"></i></a>
+              <input type= "submit" value="Отправить">
+            </form>
+            <div id="answer"></div>    
+         </div>
+    </div>
+         
+     <!-- //popup -->
 
-				<div class="row">
-					<div class="col-sm-4 text-center section-top__block-border">
-						<div class="section-top-icon icon-signal"></div>
-						<div class="section__small-title section__small-title-mb10">SYNC FASTER</div>
-                        <p class="section__paragraf section__paragraf-fsz">Quickly swipe messages to your archive or trash.
-                        </p>	
-					</div>
-					<div class="col-sm-4 text-center section-top__block-border">
-						<div class="section-top-icon icon-sync"></div>
-						<div class="section__small-title section__small-title-mb10">Automate</div>
-                        <p class="section__paragraf section__paragraf-fsz">Scan entire conversations in a chat-like view.
-                        </p>	
-					</div>
-					<div class="col-sm-4 text-center section-top__block-border">
-						<div class="section-top-icon icon-music"></div>
-						<div class="section__small-title section__small-title-mb10">Best Music</div>
-                        <p class="section__paragraf section__paragraf-fsz">Unforgettable feelings through a quality music.
-                        </p>	
-					</div>
-				</div>
-			</div>
-		</section>	
-			<!-- //top block Start Adventure-->
-
-			<!--block Best Sound (section-middle)-->
-		<section class="section-middle">
-			<div class="container">		
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="section__small-title">Movie</div>
-						<div class="section__title">Best Sound</div>
-						<p class="section__paragraf section__paragraf-mb">If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music.
-						 </p>
-					</div>				
-				</div>
-				<div class="row">
-					<div class="col-xs-6 col-sm-3">
-						<div class="section__small-title section__small-title-mb10 ">QUALITY</div>
-						<p class="section__paragraf-small">Without music, life would be a mistake.
-						 </p>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<div class="section__small-title section__small-title-mb10 ">LIVE STREAM</div>
-						<p class="section__paragraf-small">None but ourselves can free our minds.
-						 </p>
-					</div>
-                    <!--эти колонки отображаются при ширине от 768пкс до 992 пкс -->
-                    <div class="visible-sm col-sm-3">
-						<div class="section__small-title section__small-title-mb10 ">WIRELESS</div>
-						<p class="section__paragraf-small">Without deviation from the norm, progress is not possible.
-						 </p>
-					</div>
-					<div class="col-sm-3 visible-sm ">
-						<div class="section__small-title section__small-title-mb10 ">DESIGN</div>
-						<p class="section__paragraf-small">People haven't always been there for me but music always has.
-						 </p>
-					</div>	
-					<!--//эти колонки отображаются при ширине от 768пкс до 992 пкс -->	
-
-				</div>
-				<div class="row">
-					<div class="col-xs-6 hidden-sm col-md-3">
-						<div class="section__small-title section__small-title-mb10 ">WIRELESS</div>
-						<p class="section__paragraf-small">Without deviation from the norm, progress is not possible.
-						 </p>
-					</div>
-					<div class="col-xs-6 hidden-sm col-md-3">
-						<div class="section__small-title section__small-title-mb10 ">DESIGN</div>
-						<p class="section__paragraf-small">People haven't always been there for me but music always has.
-						 </p>
-					</div>				
-				</div>
-			</div>
-		</section>	
-				<!--//block Best Sound-->
-
-				<!--bottom block Start Adventure-->
-		<section class="section-bottom section-bottom-pt-235">
-			<div class="container">	
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="section__small-title">MEET QUICK</div>
-						<div class="section__title">Start Adventure</div>
-						<p class="section__paragraf section__paragraf-mb45">The artist is a collector of things imaginary or real. He accumulates things with the same enthusiasm that a little boy stuffs his pockets.
-						 </p>
-						
-                     	<div class="button-play">
-							<a href="#" class="btn-play"><i class="fa fa-play" aria-hidden="true"></i></a>
-							<p class="button-text">See Slides in action <span>40 seconds</span></p>
-						</div>							
-					</div>
-
-
-
-				</div>
-			</div>
-		</section>
-		<!--//bottom block Start Adventure-->
-
-				<!-- block Our Stores-->
-		
-			<!--//block Our Stores-->
-		<section class="video-slider">
-			<div class="container">
-				<div class="row video-slider__heading">
-					<div class="col-sm-10 col-sm-offset-1 text-center">
-						<div class="section__title">Our stories</div>
-						<p class="section__paragraf section__paragraf-pad-30">There is only you and your camera. The limitations in your photography are in yourself, for what we see is what we are.</p>
-					</div>
-				</div>	
-				<!-- блоки с видеофайлами-->
-						
-				<div class="row video-slider__block">
-					<div id="footer__slider_container" class="owl-carousel">
-						<!-- блок монтана-->
-						<div class="col-sm-6 col-md-3">
-							<div class="video-slider__block-item">
-								<video cotrols poster="img/video-screen/montana.jpg" width="260" height="200">
-									<source src="#">							 	
-								</video>
-								<a href="#" class="btn-play button-play video-slider__block-button-play"><i class="fa fa-play" aria-hidden="true"></i></a>
-								<div class="video-slider__block-text">
-									<div class="video-slider__block-text-title">montana</div>
-									<div class="video-slider__block-text-paragraf">Without music, life would be a mistake.</div>
-									<div class="line"></div>
-									<div class="video-slider__block-text-photo">
-										<img src="img/usercontent/paul.jpg" alt="user_photo">
-									</div>
-									<div class="video-slider__block-text-title text-title-sml">PAUL RAND</div>
-									<div class="video-slider__block-text-paragraf text-paragraf-pdg">Art Director, Designer</div> 
-								</div>
-							</div>
-						</div>
-								
-					<!-- //блок монтана-->
-					<!-- блок Travel-->
-					
-						<div class="col-sm-6 col-md-3">
-							<div class="video-slider__block-item">
-								<video cotrols poster="img/video-screen/travel.jpg" width="260" height="200">
-									<source src="#">							 	
-								</video>
-								<div class="video-slider__block-text">
-									<div class="video-slider__block-text-title">TRAVEL DIARY</div>
-									<div class="video-slider__block-text-paragraf">One good thing about music, when it hits you.</div>
-									<div class="line"></div>
-									<div class="video-slider__block-text-photo">
-										<img src="img/usercontent/sarah.jpg" alt="user_photo">
-									</div>
-									<div class="video-slider__block-text-title text-title-sml">SARAH COLTS</div>
-									<div class="video-slider__block-text-paragraf text-paragraf-pdg">UX Designer, Developer</div> 
-								</div>
-							</div>
-						</div>		
-					
-					<!-- //блок Travel-->
-					<!-- блок Journey-->
-					
-						<div class="col-sm-6 col-md-3">
-							<div class="video-slider__block-item">
-								<video cotrols poster="img/video-screen/jurney.jpg" width="260" height="200">
-									<source src="#">							 	
-								</video>
-								<div class="video-slider__block-text">
-									<div class="video-slider__block-text-title">THE JOURNEY</div>
-									<div class="video-slider__block-text-paragraf">None but ourselves can free our minds.</div>
-									<div class="line"></div>
-									<div class="video-slider__block-text-photo">
-										<img src="img/usercontent/jack.jpg" alt="user_photo">
-									</div>
-									<div class="video-slider__block-text-title text-title-sml">JACK SIMMERSON</div>
-									<div class="video-slider__block-text-paragraf text-paragraf-pdg">Art Director, Designer</div> 
-								</div>
-							</div>
-						</div>		
-					
-					<!-- //блок Journey-->
-					<!-- блок California-->
-					
-						<div class="col-sm-6 col-md-3">
-							<div class="video-slider__block-item">
-								<video cotrols poster="img/video-screen/california.jpg" width="260" height="200">
-									<source src="#">							 	
-								</video>
-								<div class="video-slider__block-text">
-									<div class="video-slider__block-text-title">CALIFORNIA</div>
-									<div class="video-slider__block-text-paragraf">Some people have lives; some people have music.</div>
-									<div class="line"></div>
-									<div class="video-slider__block-text-photo">
-										<img src="img/usercontent/yokko.jpg" alt="user_photo">
-									</div>
-									<div class="video-slider__block-text-title text-title-sml">YOKKO LAURENS</div>
-									<div class="video-slider__block-text-paragraf text-paragraf-pdg">UI Designer</div> 
-								</div>
-							</div>
-						</div>	
-						<!-- //блок California-->	
-				</div>
-				<!-- кнопка "play"-->	
-				<!--<div class="button-play video-slider__block-button-play">
-					<a href="#" class="btn-play button-play video-slider__block-button-play"><i class="fa fa-play" aria-hidden="true"></i></a>
-				</div>-->	
-			 </div>	
-
-				
-				<div class="line"></div>
-				<footer>
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<div class="footer-title">Start now and get <b>free bonus</b> on account</div>
-							<div class="footer-form">
-								<input type="email" placeholder="Email">
-								<input type="password" placeholder="Password">
-								<div class="start-button footer__start-button">
-				                     <a href="#">start free trial</a>
-			                    </div>	
-							</div>
-						</div>
-					</div>
-			    </footer>	
-			     <!--//footer-->
-            </div>
-		</section>	
-	</main>	
-	<!-- //основной контент-->
 
 
 

@@ -7,7 +7,27 @@
 		        topnav.attr("class","header__menu"); 
 		    }
 		});
-	 menu.onclick = function myFunction() {
+	(function() {
+ 
+  "use strict";
+ 
+  var toggles = document.querySelectorAll(".cmn-toggle-switch");
+ 
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+ 
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+    });
+  }
+ 
+})();
+
+	 navigation__button.onclick = function myFunction() {
 		var x = document.getElementById("topnav");
 		if(x.className === "header__menu") {
 			x.className += " responsive";
