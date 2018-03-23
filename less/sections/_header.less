@@ -1,0 +1,231 @@
+header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 25px 28px;
+    color: #fff;    
+    background-color: #000;
+
+    background: url('../img/bg/bg-head.jpg');
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    @media (min-width: 768px){
+        background-image:none;
+        height: 800px;
+    }
+}
+.slider {
+    display: none;
+    @media (min-width: 768px) {
+    display: block;    
+    position: absolute;
+    //overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+}
+
+.header__logo{
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    z-index:5;
+}
+/*стили для навигации*/
+.header__nav{
+    /*position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 50px;*/
+    width: 100%;
+    height: 150px;
+
+
+    @media (min-width:768px){
+        display: block;       
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        right: 50px;
+        height: 50px;
+    }
+}
+.header__menu{
+    display: none;
+    float: right;
+    @media (min-width:768px){
+        display: block;
+    }
+}
+
+.header__menu a{
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 8px 10px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+    @media (min-width:768px){
+        font-size: 13px;
+    }
+}
+.header__menu a:hover,
+.header__menu a:focus{
+    color: #ff1493;
+    border-bottom: 1px solid #ff1493;
+}
+
+
+
+
+.header__menu-icon{
+    font-size: 18px;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    display: block;
+    float: right;
+
+    color: #fff;
+    @media (min-width: 768px){
+        display: none;
+    }
+}
+
+.header__menu-icon:hover{
+    color: #daa520;
+}
+
+.header__menu-icon:focus,
+.header__menu-icon:active{
+    color: #fff;
+}
+
+/*class responsive for menu*/
+.header__menu.responsive{
+    display: block;
+    float: none;
+}
+.header__menu.responsive a{
+    display: block;
+
+    text-align: center;
+
+    &:hover{
+        padding-bottom: 7px;
+    }
+}
+/* end class responsive for menu*/
+
+.header__title{
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    margin-left: -150px;
+    width: 285px;
+    height: auto;
+   
+   
+
+    text-align: center;
+    @media (min-width:400px){
+       top: 235px;
+   }
+    @media (min-width:768px){
+        width: 585px;
+        margin-top: 100px;
+        top: 75px;
+        left: 50%;
+        margin-left: -300px;
+    }
+
+    @media (min-width:992px){
+        margin-top: 120px;
+    }
+}
+.header__title-top{
+    display: none;
+
+    @media (min-width:480px){
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+
+        display: block;
+
+        margin-bottom: 70px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        @media (min-width:992px){
+            margin-bottom: 50px;
+        }
+    }
+}
+.header__title-center{
+    font-family: 'lobster_1.3regular';
+    font-size: 80px;
+    font-style: italic;
+    line-height: 80px;
+
+    margin-bottom: 70px;
+    
+    @media (min-width:768px){
+        font-size: 150px;
+        line-height: 130px;      
+    }
+}
+
+.fa-chevron-down {
+    position: absolute;
+    bottom: 10px;
+     left: 50%; 
+     margin-left: -20px;
+    @media (min-width:768px) {
+        bottom: 20px;
+        margin-left: 0px;
+        
+    }
+}
+
+.header__text-bottom-left,
+.header__text-bottom-right {
+    display: none;
+    @media (min-width:768px){
+    display: block;    
+    position: absolute;
+    bottom: 20px;
+    }
+}
+.header__text-bottom-left{
+    left: 30px;
+}
+.header__text-bottom-right{
+    right: 30px;
+}
+.header__carousel-item{
+  width: auto;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+} 
+.item1{
+  background-image: url("../img/bg/bg-head.jpg");
+}
+.item2{
+   background-image: url("../img/bg/bg2.jpg");
+}
+.item3{
+   background-image: url("../img/bg/bg3.jpg"); 
+}

@@ -1,0 +1,78 @@
+ .start-button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15px;
+
+    text-transform: uppercase;
+
+    border-radius: 25px;
+    background-color: rgb(255, 20, 147);
+
+    @media (min-width:768px){
+        font-size: 17px;
+
+        width: 254px;
+
+        color: #fff;
+    }
+}
+.start-button:hover{
+    background-color: rgba(255, 20, 147, .3);
+}
+.start-button a{
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.start-bottom-left,
+.start-bottom-right{
+    display: none;
+    @media (min-width:768px){
+        font-size: 16px;
+        font-weight: bold;
+
+        position: absolute;
+        bottom: 20px;
+
+        display: block;
+
+        color: #fff;
+    }
+}
+
+//button "play"
+.button-play{
+    position: relative;
+}
+a.btn-play{
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 42px;
+    height: 42px;
+    padding-left: 20px;
+
+    color: #303030;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover,
+    &:focus{
+        color: #646361;
+    }
+    @media (min-width:480px){
+        top: -8px;
+    }
+}
+
+.fa-play{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
+// end button "play"
