@@ -37,9 +37,7 @@
 		;
 		if(x.className === "header__menu") {
 			x.className += " responsive";
-			console.log("click")
 		}  else{
-			console.log("clock")
 				x.className = "header__menu";
 
 		}
@@ -55,6 +53,19 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
     $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
 });
 //открываем поп 
+
+//animated
+ wow = new WOW( {
+     boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       100,          // через сколько пикселей сработает
+    mobile:       false,       // default
+    live:         true        // для мобильных оставить или убрать анимацию
+  }
+  )
+  wow.init();
+   new WOW().init();
+
 
 	$(document).ready(function(){
   $('#owl-top').owlCarousel({
