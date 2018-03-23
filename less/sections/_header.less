@@ -14,7 +14,7 @@ header{
     background-size: cover;    
     @media (min-width: 768px){
         background-image:none;
-        height: 800px;
+        height: 700px;
     }
 }
 .slider {
@@ -71,7 +71,7 @@ header{
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #333;
 
     @media (min-width:768px){
         font-size: 13px;
@@ -221,11 +221,37 @@ header{
   background-size: cover;  
 } 
 .item1{
-  background-image: url("../img/bg/bg-head.jpg");
+  background-image: url("../img/bg/bg4.jpg");
 }
 .item2{
-   background-image: url("../img/bg/bg2.jpg");
+   background-image: url("../img/bg/bg5.jpg");
 }
 .item3{
    background-image: url("../img/bg/bg3.jpg"); 
+}
+.button-basic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    z-index: 10;
+
+   width: 250px;
+   height: 60px;
+   border: 2px solid #333;
+
+   & a {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    &:hover {
+        color: #777;
+    }
+   }
+
 }
