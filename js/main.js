@@ -1,4 +1,6 @@
  $(document).ready(function() {
+ 	
+
 	$(window).resize(function(){
 		    var w = $(window).width();
 		    var topnav = $("#topnav");
@@ -7,6 +9,7 @@
 		        topnav.attr("class","header__menu"); 
 		    }
 		});
+	//бургер
 	(function() {
  
   "use strict";
@@ -26,16 +29,32 @@
   }
  
 })();
+// коне
+	$("#navigation__button").click(myFunction); 
 
-	 navigation__button.onclick = function myFunction() {
+	function myFunction() {
 		var x = document.getElementById("topnav");
+		;
 		if(x.className === "header__menu") {
 			x.className += " responsive";
+			console.log("click")
 		}  else{
+			console.log("clock")
 				x.className = "header__menu";
 
 		}
 	}
+
+	//открываем поп 
+$('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
+    var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
+    $(popup_id).show(); // Открываем окно
+    $('.overlay_popup').show(); // Открываем блок заднего фона
+}) 
+$('.overlay_popup').click(function() { // Обрабатываем клик по заднему фону
+    $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+});
+//открываем поп 
 
 	$(document).ready(function(){
   $('#owl-top').owlCarousel({

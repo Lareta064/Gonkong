@@ -182,7 +182,7 @@ section {
 }
 .button-parent {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -193,43 +193,44 @@ section {
   max-width: 1100px;
   margin: auto;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .button-parent--inner {
-  padding: 4em 1em;
+  padding: 10px;
 }
 a {
   text-decoration: none;
   font-weight: 700;
   position: relative;
-  color: #F3152D;
+  color: #cccccc;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 a:hover {
-  color: #fff;
-}
-.button-item {
-  padding-bottom: 2em;
+  color: red;
 }
 .btn-1 {
   padding: 1em 3em;
-  border: 3px solid #F3152D;
+  border: 3px solid #cccccc;
   transition: all 300ms ease;
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .btn-1:before {
   position: absolute;
   content: '';
   width: 0%;
   height: 100%;
-  background: #F3152D;
+  background: #cccccc;
   top: 0;
   left: 50%;
   z-index: -1;
   transition: all 0ms ease;
 }
 .btn-1:hover {
-  color: #fff;
+  color: #333;
   box-shadow: none;
 }
 .btn-1:hover:before {
@@ -237,11 +238,15 @@ a:hover {
   content: '';
   width: 100%;
   height: 100%;
-  background: #F3152D;
+  background: #cccccc;
   top: 0;
   left: 0%;
   z-index: -1;
   transition: all 300ms ease;
+}
+.btn-1:active {
+  color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .cmn-toggle-switch {
   display: block;
@@ -353,6 +358,170 @@ a:hover {
   -webkit-transition-delay: 0, 0.3s;
   transition-delay: 0, 0.3s;
 }
+/***********************************/
+/* Стили для содержимого popup окна */
+input,
+textarea {
+  color: #000;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+  line-height: 1.5;
+}
+input:focus {
+  border-color: #808080;
+  outline: none;
+}
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+/* Окно */
+.overlay_popup {
+  /*display: block;*/
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.popup {
+  display: none;
+  /*display: block;*/
+  position: relative;
+  z-index: 1000;
+  margin: 0 25% 0 25%;
+  width: 50%;
+}
+/* Ещё немного стилей для popup окна */
+.object {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #3c4447;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+@media (min-width: 768px) {
+  .object {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .object {
+    width: 55%;
+  }
+}
+.object h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+input[type="submit"] {
+  color: #fff;
+  background-color: inherit;
+  display: block;
+  width: 150px;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+input[type="submit"]:hover {
+  background-color: #3c444799;
+}
+label.error {
+  font-size: 12px;
+  color: red;
+}
+/*окно благодарность*/
+.contact-form__success {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  line-height: 34px;
+  width: 100%;
+  height: auto;
+  background-color: #f3f8fb;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+#answer {
+  font-size: 0;
+}
+/*крестик закрыть окно*/
+#form-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #aac4d4;
+  font-size: 24px;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.form-block-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.form-block-container input,
+.form-block-container textarea {
+  padding: 12px;
+  font-size: 14px;
+}
+.form-left-container,
+.form-right-container {
+  width: 49%;
+}
+#contact-form {
+  padding: 20px;
+}
+@media (min-width: 680px) {
+  .contact-block {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+input {
+  display: block;
+  font-size: 16px;
+  width: 235px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  input {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
 header {
   position: relative;
   overflow: hidden;
@@ -385,16 +554,16 @@ header {
     bottom: 0;
   }
 }
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: 11;
-}
+/*header::before {
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    background-color: rgba(255,255,255, .2);
+    z-index:11;
+}*/
 .header__logo {
   position: absolute;
   top: 10px;
@@ -403,10 +572,10 @@ header::before {
 }
 /*стили для навигации*/
 .header__nav {
-  /*position: absolute;
-    z-index: 10;
-    top: 20px;
-    right: 50px;*/
+  position: absolute;
+  z-index: 15;
+  top: 20px;
+  right: 50px;
   width: 100%;
   height: 150px;
 }
@@ -443,8 +612,8 @@ header::before {
 }
 .header__menu a:hover,
 .header__menu a:focus {
-  color: #F3152D;
-  border-bottom: 1px solid #F3152D;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 .header__menu-icon {
   font-size: 18px;
@@ -817,20 +986,6 @@ footer {
 @media (min-width: 768px) {
   .footer-title {
     font-size: 22px;
-  }
-}
-input {
-  display: block;
-  font-size: 18px;
-  width: 235px;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  input {
-    display: inline-block;
-    margin-right: 5px;
   }
 }
 .footer__start-button {
