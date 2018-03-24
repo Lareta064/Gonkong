@@ -13,7 +13,8 @@
     $("a,nav a,a[href='#'],a[rel='m_PageScroll2id'],a.PageScroll2id, a.mouse_scroll").mPageScroll2id({
       highlightSelector:"nav a"
     });
-	//бургер
+
+	//иконка бургер
 	(function() {
  
   "use strict";
@@ -33,7 +34,8 @@
   }
  
 })();
-// коне
+// конец иконка
+
 	$("#navigation__button").click(myFunction); 
 
 	function myFunction() {
@@ -62,10 +64,10 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
  wow = new WOW( {
      boxClass:     'wow',      // default
     animateClass: 'animated', // default
-    offset:       100,          // через сколько пикселей сработает
     mobile:       false,       // default
+    offset:       100,          // через сколько пикселей сработает
     live:         true        // для мобильных оставить или убрать анимацию
-  }
+    }
   )
   wow.init();
    new WOW().init();

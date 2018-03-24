@@ -1,19 +1,37 @@
 footer.contacts {
+    padding-top: 10px;
     width: 100%;
-    height: 60px;
+    height: 100px;
     background-color: #cfd5df;
+    box-shadow: -1px 5px 25px -5px #000000 inset;
+     @media (min-width: 480px){
+         height: 66px;
+    }
 }
 .contact-block {
-    width: 50%;
+    width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+     
+    @media (min-width: 992px){
+        width: 60%;
+    }
+}
+.contact-item {
+
+    margin-bottom: 20px;
+     @media (min-width: 480px){
+        margin-bottom: 0px;
+    }
 }
 a.mail{
-    margin-left: 15px;}
+    margin-left: 15px;
+    text-transform: lowercase;}
 
 .item-mail{
     display: flex;
