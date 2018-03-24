@@ -47,9 +47,9 @@
 		</div>	
 		<nav class="header__nav">
             <div class="header__menu" id="topnav">
-				<a href="#">О компании</a>
-				<a href="#">Мероприятия</a>
-				<a href="#">Партнеры</a>
+				<a href="#aboutus">О компании</a>
+				<a href="#action">Мероприятия</a>
+				<a href="#partners">Партнеры</a>
 				<a href="#">Напишите нам</a>
             </div>            
 		</nav>
@@ -76,9 +76,51 @@
      <!-- //шапка--> 
 
 	<!-- основной контент-->
+  <!-- top block Start Adventure-->
+    <section class="section-top" id="aboutus">
+      <div class="container">       
+        <div class="row section-top-row">
+          <div class="section__title wow fadeInRight">О компании</div>
+          <div class="col-md-6">
+            <!--<div class="section__small-title">MEET QUICK</div>-->
+            
+            <p class="section__paragraf">Компания<span class="bold-text"> CryptoEvents Asia </span>занимается<span class="italic-text bold-text"> invest relations, marketing and event management </span> в сфере блокчейн. На Азиатском рынке мы работаем с 2005 года, на рынке криптовалюты с 2016г года.
+             </p>
+             <p class="section__paragraf">  
+              <span class="bold-text">ГонгКонг, Китай, Корея, Япония, Сингапур, Индонезия, Индия </span>- рынки на которых мы можВашему проекту провести мероприятие, запустить маркетинг продукта или получить инвестицразвитие.
+                        </p>
+          </div> 
+          <div class="col-md-6">
+            <img src="img/asia.jpg" class="img-responsive" alt="asia">
+          </div>      
+        </div>
+
+        <!--<div class="row">
+          <div class="col-sm-4 text-center section-top__block-border">
+            <div class="section-top-icon icon-signal"></div>
+            <div class="section__small-title section__small-title-mb10">SYNC FASTER</div>
+                        <p class="section__paragraf section__paragraf-fsz">Quickly swipe messages to your archive or trash.
+                        </p>  
+          </div>
+          <div class="col-sm-4 text-center section-top__block-border">
+            <div class="section-top-icon icon-sync"></div>
+            <div class="section__small-title section__small-title-mb10">Automate</div>
+                        <p class="section__paragraf section__paragraf-fsz">Scan entire conversations in a chat-like view.
+                        </p>  
+          </div>
+          <div class="col-sm-4 text-center section-top__block-border">
+            <div class="section-top-icon icon-music"></div>
+            <div class="section__small-title section__small-title-mb10">Best Music</div>
+                        <p class="section__paragraf section__paragraf-fsz">Unforgettable feelings through a quality music.
+                        </p>  
+          </div>
+        </div>-->
+      </div>
+    </section>  
+      <!-- //top block Start Adventure-->
     
 	<!--popup-->
-     <div class="overlay_popup"></div>
+    <div class="overlay_popup"></div>
      <div class="popup" id="popup1">
         <div class="object wow fadeIn">
             <form id="contact-form" action= "php/mail.php" method= "POST"> 
@@ -86,14 +128,14 @@
               <input type="hidden" name="project_name" value="Мероприятие">
               <input type="hidden" name="admin_email" value="info@mail.ru">
               <input type="hidden" name="form_subject" value="Сообщение с сайта">
-            <!-- END Hidden Required Fields -->
-                <h4>Готовы к переменам к лучшему? Свяжитесь с нами!</h4>
-                <div class="form-block-container">
-                  <div class="form-left-container">
-                      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
-                      <input type="text" class="phone" name="phone" id="phone" placeholder="Телефон" required>
+                <!-- END Hidden Required Fields -->
+              <h4>Готовы к переменам к лучшему? Свяжитесь с нами!</h4>
+              <div class="form-block-container">
+                <div class="form-left-container">
+                    <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                    <input type="text" class="phone" name="phone" id="phone" placeholder="Телефон" required>
                       <input type="email" name="email" id="email" placeholder="E-mail" required>
-                  </div>
+                </div>
                     <div class="form-right-container">
                      <textarea name="message" id="message" rows="7" placeholder="Ваше сообщение" required></textarea>
                   </div>     

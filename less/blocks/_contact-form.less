@@ -82,7 +82,12 @@ input[type="submit"] {
   margin-bottom: 25px;
 }
 input[type="submit"]:hover {
+  color: rgb(153, 153, 153);
   background-color: #3c444799;
+}
+input[type="submit"]:active {
+  color: #333;
+  background-color: rgb(204, 204, 204);
 }
 label.error {
   font-size: 12px;
@@ -119,6 +124,9 @@ label.error {
   display: inline-block;
   padding: 5px;
   cursor: pointer;
+  &:hover{
+    color: #fff;
+  }
 }
 .form-block-container {
   width: 100%;
