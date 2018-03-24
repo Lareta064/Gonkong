@@ -166,16 +166,11 @@ section {
   }
 }
 .section-top-row {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 @media (min-width: 768px) {
   .section-top-row {
     margin-bottom: 80px;
-  }
-}
-@media (min-width: 992px) {
-  .section-top-row {
-    margin-bottom: 135px;
   }
 }
 .section__paragraf-pad-30 {
@@ -209,12 +204,13 @@ section {
 .center-slogan {
   max-width: 100%;
   height: 315px;
-  background-color: blue;
+  background-color: rgba(78, 102, 130, 0.95);
   /*background: url("../img/crepto3.png");
 	background-repeat: no-repeat;
 	background-size: cover;	 */
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .slogan-content {
   position: absolute;
@@ -966,6 +962,32 @@ ul.programm-list li {
   margin-bottom: 15px;
   font-size: 16px;
 }
+.action-img {
+  width: 100%;
+  background-color: rgba(78, 102, 130, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-slogan-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center-slogan-text h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
 .section-bottom {
   background-color: #cfdfdd;
   padding-bottom: 130px;
@@ -1071,6 +1093,27 @@ ul.programm-list li {
 a.video-slider__block-button-play {
   top: 85px;
   left: 105px;
+}
+.partners-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners-block-item {
+  width: 24%;
+  text-align: center;
+  box-shadow: 0px 1px 12px -1px #000000;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 footer {
   font-family: 'Raleway', sans-serif;
