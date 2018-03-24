@@ -1099,6 +1099,7 @@ a.video-slider__block-button-play {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 60px;
 }
 .partners-block {
   width: 100%;
@@ -1114,6 +1115,9 @@ a.video-slider__block-button-play {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.partners-block-item a {
+  color: #000;
 }
 footer {
   font-family: 'Raleway', sans-serif;
