@@ -385,6 +385,20 @@ header a:hover {
   color: #cccccc;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.button-bottom {
+  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-bottom:hover {
+  color: #333;
+  background-color: #cccccc;
+}
 .cmn-toggle-switch {
   display: block;
   position: absolute;
@@ -1086,6 +1100,10 @@ ul.programm-list li {
   .center-slogan-text h2 {
     font-size: 24px;
   }
+}
+.head-center {
+  display: inline-block;
+  margin-left: auto;
 }
 .partners-block {
   width: 100%;
