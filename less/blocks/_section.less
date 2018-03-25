@@ -131,13 +131,17 @@ section {
 	max-width:100%;
 	height: 315px;
 	background-color: rgba(78,102,130, .95);
-	
+	background: url('../img/bg/bg6.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 	margin-left: auto;
 	margin-right: auto;
 	
 	margin-bottom: 70px;
     padding-top: 70px;
-	&:before{
+	/*&:before{
       content: "";
       position: absolute;
       width: 100%;
@@ -146,10 +150,24 @@ section {
       top:0;
       left: 0;
       box-shadow: -1px 11px 17px -7px #000000;
-	}
+	}*/
+	&::before {
+        position: absolute;
+        content:"";
+        background-color: rgba(0,0,0, .5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
 	@media (min-width: 768px){
 		//padding-top: 70px;
 	}
+}
+.center-slogan-text {
+	z-index:10;
+	position: relative;
 }
 .slogan-content {
 	position: absolute;
@@ -167,7 +185,7 @@ section {
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: rgba(0,0,0, .8);
-
+    
 }
 .center-slogan h2 {
 	font-size: 22px;

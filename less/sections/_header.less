@@ -1,36 +1,44 @@
 header{
     position: relative;
-
     overflow: hidden;
-
     width: 100%;
     height: 100vh;
     padding: 25px;
-
+    background-color: #777;
     color: #fff;
-    background: url('../img/bg/bg6.jpg');
-    background-color: #000;
-    background-color: #000;
+    background: url('../img/bg/bg7.jpg');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media (min-width: 480px){
+
+    &::before {
+        position: absolute;
+        content:"";
+        background-color: rgba(0,0,0, .5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+   /* @media (min-width: 480px){
         height: 700px;
 
         background-image: none;
-    }
+    }*/
 }
 
-.slider{
+/*.slider{
     position: absolute;
-    /*overflow: hidden;*/
+    /*overflow: hidden;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 
     display: block;
-}
+}*/
 
 .header__logo{
     position: absolute;
@@ -77,8 +85,8 @@ header{
     padding: 8px 10px;
 
     text-transform: uppercase;
-
-    color: #333;
+     color: #fff;
+    //color: #333;
 
     @media (min-width:768px){
         font-size: 13px;
@@ -110,8 +118,8 @@ h1.head{
             transform: translate(-50%, -50%);
     text-align: center;
 
-    color: #000;
-    text-shadow: 0 1px 1px #ddd,
+    color: #fff;
+    /*text-shadow: 0 1px 1px #ddd,
     0 2px 1px #d6d6d6,
     0 3px 1px #ccc,
     0 4px 1px #c5c5c5,
@@ -123,7 +131,7 @@ h1.head{
     0 10px 7px rgba(100, 100, 100, .15),
     0 11px 9px rgba(100, 100, 100, .2),
     0 12px 11px rgba(100, 100, 100, .25),
-    0 13px 15px rgba(100, 100, 100, .3);
+    0 13px 15px rgba(100, 100, 100, .3);*/
 
     @media (min-width:480px){
         font-size: 40px;
