@@ -22,29 +22,19 @@ header{
         right: 0;
         z-index: 1;
     }
-   /* @media (min-width: 480px){
-        height: 700px;
-
-        background-image: none;
-    }*/
-}
-
-/*.slider{
-    position: absolute;
-    /*overflow: hidden;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-}*/
+  }
 
 .header__logo{
     position: absolute;
     z-index: 14;
     top: 10px;
-    left: 28px;
+    left: 6%;
+    @media (min-width:1200px){
+       left: 10% 
+    }
+    @media (min-width:1500px){
+       left: 15% 
+    }
 }
 /*стили для навигации*/
 .header__nav{
@@ -61,13 +51,19 @@ header{
         position: absolute;
         z-index: 15;
         top: 25px;
-        right: 20px;
+        right: 6%;
 
         display: block;
 
         width: 60%;
         height: 50px;
         padding-top: 0;
+    }
+     @media (min-width:1200px){
+       right: 10%; 
+    }
+    @media (min-width:1500px){
+       right: 15% 
     }
 }
 .header__menu{
@@ -112,29 +108,27 @@ h1.head{
     top: 35%;
     left: 50%;
 
-    width: 90%;
+    width: 95%;
 
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     text-align: center;
 
     color: #fff;
-    /*text-shadow: 0 1px 1px #ddd,
-    0 2px 1px #d6d6d6,
-    0 3px 1px #ccc,
-    0 4px 1px #c5c5c5,
-    0 5px 1px #c1c1c1,
-    0 6px 1px #bbb,
-    0 7px 1px #777,
-    0 8px 3px rgba(100, 100, 100, .4),
-    0 9px 5px rgba(100, 100, 100, .1),
-    0 10px 7px rgba(100, 100, 100, .15),
-    0 11px 9px rgba(100, 100, 100, .2),
-    0 12px 11px rgba(100, 100, 100, .25),
-    0 13px 15px rgba(100, 100, 100, .3);*/
-
     @media (min-width:480px){
+        font-size: 34px;
+    }
+     @media (min-width:360px){
+        font-size: 28px;
+        
+    }
+     @media (min-width:400px){
+        font-size: 30px;
+       
+    }
+     @media (min-width:550px){
         font-size: 40px;
+        width: 90%;
     }
     @media (min-width:768px){
         font-size: 40px; 
@@ -165,7 +159,7 @@ h1.head{
 }
 .header__menu.responsive a{
     display: block;
-
+    color: #333;
     text-align: center;
 
     &:hover{

@@ -1,8 +1,6 @@
 .section-middle {   	
-	//background-color: #e6e4df;
-	//background-color: rgba(204, 204, 204, .2);
-     background-color: rgba(78,102,130, .7);
-	 box-shadow: -1px 11px 17px -7px #000000;
+	padding-top: 55px;
+	background-color: #fafafa;
 }
 
 .section__paragraf-mb {
@@ -35,7 +33,7 @@
 	padding: 35px;
 	width: 99%;
 	box-shadow: 0px 1px 12px -3px #000000;
-	//background-color: rgba(230,228,223, .2);
+	
 	background-color:#fffffd;
 	margin-bottom: 40px;
 	 @media (min-width:768px) {
@@ -78,27 +76,56 @@ ul.programm-list li {
 	}
 }
 .action-img {
+    padding-top: 40px;
 	width: 100%;
-	//background-color: rgba(78,102,130, .7);
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 70px;
+	height: 300px;
+	background: url("../img/bg2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 60px;
+}
+.text-left,
+.text-right{
+	float: left;
+	
+	font-size: 16px;
+	font-style: italic;
+	color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-shadow: 0px 2px 4.75px rgba(0, 0, 0, 0.75);
+    @media (min-width:768px){
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+}
+.text-2 span {
+	color: #e03c38;
+}
+.text-right {
+	font-size: 14px;
+	float: right;
+	line-height: 2;
+	@media (min-width:768px){
+        font-size: 24px;
+        
+    }
+}
+.text-img {
+	
+	margin-bottom: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	//box-shadow: 0px 9px 18px -8px #000000;
-}
-/*.center-slogan-text {
-	position: absolute;
-	top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     
-}*/
+    
+	& img {
+		width: 170px;
+	    height: 37px;
+	}
+}
 .center-slogan-text h2 {
 	margin-bottom: 40px;
 	font-size: 19px;
@@ -113,5 +140,20 @@ ul.programm-list li {
 	display: inline-block;
 	margin-left: auto;
 	margin-left: auto;
+	
+}
+.text-box {
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	align-items: stretch;
+}
+.left-column,
+.right-column {
+	width: 50%;
+	margin:0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
 	
 }

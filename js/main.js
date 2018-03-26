@@ -49,6 +49,26 @@
 		}
 	}
 
+  var navLinks = $(".header__nav a");
+  var navToggleButton = $("#navigation__button");
+  var navBlock = $('.header__menu');
+  var navBlockOpen = 'responsive';
+
+  navLinks.on('click', function(){
+    if ( navBlock.hasClass(navBlockOpen) ) {
+      navButtonToggle();
+    }
+    navBlock.removeClass(navBlockOpen);
+  });
+
+  function navButtonToggle(){
+    if ( navToggleButton.hasClass("active")) {
+      navToggleButton.removeClass("active");
+    } else {
+      navToggleButton.addClass("active");
+    }
+  }
+
 	//открываем поп 
 $('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
     var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
@@ -73,17 +93,7 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
    new WOW().init();
 
 
-	$(document).ready(function(){
-  $('#owl-top').owlCarousel({
-  items: 1,
-  loop: true,
-  nav: false,
-  
-    autoplay:true, // автопрокрутка
-    smartSpeed: 3000,
-    autoplayTimeout:4000, // задержка в мс
-  });  
-});
+	
 
 });
 
